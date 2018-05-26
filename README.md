@@ -4,8 +4,6 @@
 
 # Quickstart
 
-[TODO]
-
 Example of script launch on Linux, Python 3.5:
 
 ```bash
