@@ -1,6 +1,6 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+Скрипт принимает путь до файла с произвольными данными в формате JSON и выводит его содержимое в консоль в удобном для чтения виде
 
 # Quickstart
 
@@ -9,10 +9,21 @@
 Example of script launch on Linux, Python 3.5:
 
 ```bash
-
-$ python pprint_json.py <path to file>
-# TODO add output example
-
+python pprint_json.py
+[
+    {
+        "properties": {
+            "ReleaseNumber": 2,
+            "VersionNumber": 1,
+            "Attributes": {
+                "IsNetObject": "да",
+                "AdmArea": "Западный административный округ",
+                "Name": "Ароматный Мир",
+                "WorkingHours": [
+                    {
+                        "DayOfWeek": "понедельник",
+                        "Hours": "09:30-22:30"
+                    },
 ```
 
 # Project Goals
