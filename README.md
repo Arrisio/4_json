@@ -1,8 +1,10 @@
-# Prettify JSON
+# Назначение
 
 Скрипт принимает путь до файла с произвольными данными в формате JSON и выводит его содержимое в консоль в удобном для чтения виде
 
-# Quickstart
+# Как запускать
+Запустить скрипт, указав через ключ `-f` json файл
+# Пример запуска
 
 Example of script launch on Linux, Python 3.5:
 
@@ -24,6 +26,6 @@ python pprint_json.py
                     },
 ```
 
-# Project Goals
+# Цели проекта
 
 The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
