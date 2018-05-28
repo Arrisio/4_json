@@ -6,8 +6,7 @@
 Запустить скрипт, указав через ключ `-f` json файл
 # Пример запуска
 
-Example of script launch on Linux, Python 3.5:
-
+Пример запуска на Linux, Python 3.5:
 ```bash
 python pprint_json.py
 [
