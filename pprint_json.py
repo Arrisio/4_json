@@ -6,8 +6,8 @@ def load_data(filepath):
     return json.load(open(filepath, 'r', encoding='UTF8'))['features']
 
 
-def pretty_print_json(data):
-    return json.dumps(data, indent=4, ensure_ascii=False)
+def pretty_print_json(json_data):
+    return json.dumps(json_data, indent=4, ensure_ascii=False)
 
 
 def parse_arguments():
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     except OSError as e:
         print('Файл {} не существует '.format(params.filepath))
         exit()
-
+    
     try:
         print(pretty_print_json(json_data))
     except ValueError:
