@@ -6,8 +6,8 @@ def load_data(filepath):
     return json.load(open(filepath, 'r', encoding='UTF8'))
 
 
-def pretty_print_json(data):
-    print(json.dumps(data, indent=4, ensure_ascii=False))
+def pretty_print_json(json_data):
+    print(json.dumps(json_data, indent=4, ensure_ascii=False))
 
 
 def parse_arguments():
