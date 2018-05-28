@@ -3,7 +3,8 @@ import argparse
 
 
 def load_data(filepath):
-    return json.load(open(filepath, 'r', encoding='UTF8'))
+    with open(filepath, 'r', encoding='UTF8') as file_handler:
+        return json.load(file_handler)
 
 
 def pretty_print_json(json_data):
@@ -27,10 +28,10 @@ if __name__ == '__main__':
     params = parse_arguments()
 
     try:
-        json_data = load_data(params.filepath)
+        loaded_json = load_data(params.filepath)
     except ValueError:
         exit('Не могу прочитать данные из файла {}'.format(params.filepath))
     except OSError:
         exit('Файл {} не существует '.format(params.filepath))
     else:
-        pretty_print_json(json_data)
+        pretty_print_json(loaded_json)
